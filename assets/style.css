@@ -3,3 +3,29 @@
       width: 970px;
      }
   } */
+/* 
+  #profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+   */
+   .container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1600px; /* or 950px */
+  }
+  #bottom{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1600px;
+  }
+  #main-body{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1600px;
+  }
+  #profile{
+      margin-top: -1.5rem;
+  }

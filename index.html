@@ -26,9 +26,17 @@
         </div>
     </header>
 
-    <main class="container d-flex bd-highlight p-0 m-0">
+      <div id="main-body" class="mx-auto container-fluid p-0 m-0">
+          <div class="main-body row">
 
-        <div id="carouselExampleCaptions" class="justify-content-start col-6 carousel slide" data-ride="carousel">
+            <nav class="nav flex-column col-2">
+                <a class="nav-link active" href="#">About</a>
+                <a class="nav-link" href="#">Resume</a>
+                <a class="nav-link" href="#">Github</a>
+                <a class="nav-link" href="#">Contact</a>
+            </nav>
+        
+        <div id="carouselExampleCaptions" class="col-6 carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -66,11 +74,14 @@
               <span class="sr-only">Next</span>
             </a>
         </div>
-            <div class="col-5">
-                <img class= "img-fluid" src="assets\images\allBlack.png" alt="">
+            <div id="profile" class="col-4">
+                <img id="profile" class= "img-fluid my-auto" src="assets\images\allBlack.png" alt="">
             </div>
-    </main>
-            <img class = "col" src="assets\images\noCubesOrClouds.png" alt="">
+        </div>
+    </div>
+        <div class="container-fluid">
+            <img id="bottom" class="col fixed-bottom" src="assets\images\noCubesOrClouds.png" alt="">
+        </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script type="text/javascript"></script>
     <script  src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
