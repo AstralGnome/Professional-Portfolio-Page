@@ -20,11 +20,11 @@
     max-width: 1600px;
   }
   
-  #profile{
+  /* #profileImg {
     margin-top: -1.5rem;
-    max-width: 300px;
+    max-width: 500px;
     min-width: 250px;
-  }
+  } */
   
   
   /* #main-body{
@@ -44,16 +44,34 @@
        }
     }
   @media (max-width: 768px) {
-      #profile {
-    margin-top: -1.5rem;
-    max-width: 300px;
-    min-width: 250px;
-       }
+      #card-decks {
+        margin-left:auto;
+        margin-right: auto;
+        margin-top: 3rem;
+        
+      }
     }
   @media (min-width: 768px) {
-      #profile {
-    margin-top: -1.5rem;
-    max-width: 500px;
-    min-width: 350px;
-       }
+      #card-decks {
+        margin-top: 3rem;
+        padding: 0;
+      }
     }
+  @media (max-width: 768px) {
+      #cardio {
+        width: 100%;
+      }
+    }
+  @media (min-width: 768px) {
+      #cardio {
+        width: 19rem;
+      }
+    }
+
+  /* @media (max-width: 768px) {
+      #profileImg {
+    margin-top: -1.5rem;
+    max-width: 300px;
+    min-width: 15px;
+       }
+    } */
