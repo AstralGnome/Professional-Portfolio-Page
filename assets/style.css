@@ -1,38 +1,10 @@
 
-/* 
-#profile {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  */
-  
-  /* .container-fluid {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1600px; or 950px
-  } */
-  
   #navbar, #bottom, #top, #primary, #title{
     margin-right: auto;
     margin-left: auto;
     max-width: 1600px;
   }
-  
-  /* #profileImg {
-    margin-top: -1.5rem;
-    max-width: 500px;
-    min-width: 250px;
-  } */
-  
-  
-  /* #main-body{
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1600px;
-  } */
-  
+
   @media (max-width: 768px) {
       #navbar {
         display: none;
@@ -58,20 +30,16 @@
       }
     }
   @media (max-width: 768px) {
-      #cardio {
+      .cardio {
         width: 100%;
       }
     }
   @media (min-width: 768px) {
-      #cardio {
+      .cardio {
         width: 19rem;
       }
     }
 
-  /* @media (max-width: 768px) {
-      #profileImg {
-    margin-top: -1.5rem;
-    max-width: 300px;
-    min-width: 15px;
-       }
-    } */
+ .cardio {
+   border: 5px ridge black ;
+ }
