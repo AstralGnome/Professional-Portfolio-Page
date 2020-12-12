@@ -21,55 +21,113 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
     <link rel="icon" href="assets\images\crystal1inks.png" />
 
-    <title>Professional Portfolio</title>
+    <title>Keenan Reed's Portfolio</title>
   </head>
 
   <body>
     <!-- HEADER -->
     <header class="container-fluid">
-        <div class="row">
-          <img id="top" class="col p-0" src="assets\images\001 r inked.png" alt="" />
-        </div>
-      </header>
-  
-      <!-- TITLE -->
-      <div id="title" class="row">
-        <h3 class="text-monospace text-center mx-auto pb-4">Keenan Reed<br>Full Stack Developer</h3>        
+      <div class="row">
+        <img id="top" class="col p-0" src="assets\images\001 r inked.png" alt="" />
       </div>
+    </header>
 
-    <!-- NAVBAR -->
-    <div id="navbar" class="row col-2 order-1">
-        <nav class="pt-auto mt-5 mt-md-2 mx-md-auto pl-md-3 text-md-right">
-          <a class="nav-link active" href="#">About</a>
-          <a class="nav-link" href="#">Resume</a>
-          <a class="nav-link" href="#">Github</a>
-          <a class="nav-link" href="#">Contact</a>
-        </nav>
+    <!-- TITLE -->
+    <div id="title" class="row">
+      <h2 class="text-monospace text-primary text-center mx-auto pb-4 mt-3">Keenan Reed<br>Full Stack Developer</h2>        
     </div>
 
     <!-- NAVBAR2 -->
     <nav id="navbar2" class="navbar navbar-light bg-lignt">
-        <a href="/" class="text-secondary navbar-brand">Home</a>
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
-            <span class="navbar-toggler-icon my-toggler"></span>
-        </button>
-        <div class="navbar-collapse collapse" id="collapsingNavbar2">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Resume</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">GitHub</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li
-            </ul>
+      <a href="/" class="text-primary navbar-brand">Home</a>
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+          <span class="navbar-toggler-icon my-toggler"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="collapsingNavbar2">
+          <ul class="navbar-nav mx-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Resume</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">GitHub</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+              </li
+          </ul>
+      </div>
+   </nav>
+   
+   <!-- CONTAINER -->
+   <div id="primary" class="mt-2 row">  
+      
+      <!-- NAVBAR -->
+      <nav id="navbar" class="ml-5 flex-column nav-pills mt-5 text-md-center" style="z-index: ;">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="resume.html">Resume</a>
+        <a class="nav-link" href="https://github.com/AstralGnome">Github</a>
+        <a class="nav-link disabled active" href="contact.html">Contact</a>
+      </nav>
+
+      <form id="contact-form" class="" method="post" action="contact.php" role="form">
+        <div class="messages"></div>
+        <div class="controls">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="form_name">Firstname *</label>
+                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="form_lastname">Lastname *</label>
+                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="form_email">Email *</label>
+                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="form_phone">Phone</label>
+                        <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="form_message">Message *</label>
+                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <input type="submit" class="btn btn-success btn-send" value="Send message">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-muted"><strong>*</strong> These fields are required. Contact form template by <a href="http://bootstrapious.com" target="_blank">Bootstrapious</a>.</p>
+                </div>
+            </div>
         </div>
-     </nav>
+    
+    </form>
 
     <!-- FOOTER -->
     <div class="container-fluid">
