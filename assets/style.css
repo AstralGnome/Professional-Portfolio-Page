@@ -47,3 +47,7 @@
  #contact-form{
   margin-right: 35%;
  }
+
+ body {
+  background: linear-gradient(to bottom left, rgb(2, 2, 2), 60%, rgb(47, 85, 121)) !important;
+ }
