@@ -1,53 +1,76 @@
+#navbar,
+#bottom,
+#top,
+#primary,
+#title {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1600px;
+}
 
-  #navbar, #bottom, #top, #primary, #title{
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1600px;
+@media (max-width: 768px) {
+  #navbar {
+    display: none;
   }
+}
+@media (min-width: 768px) {
+  #navbar2 {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  #card-decks {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+  }
+}
+@media (min-width: 768px) {
+  #card-decks {
+    margin-top: 3rem;
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  .cardio {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .cardio {
+    width: 19rem;
+  }
+}
 
-  @media (max-width: 768px) {
-      #navbar {
-        display: none;
-       }
-    }
-  @media (min-width: 768px) {
-      #navbar2 {
-        display: none;
-       }
-    }
-  @media (max-width: 768px) {
-      #card-decks {
-        margin-left:auto;
-        margin-right: auto;
-        margin-top: 3rem;
-        
-      }
-    }
-  @media (min-width: 768px) {
-      #card-decks {
-        margin-top: 3rem;
-        padding: 0;
-      }
-    }
-  @media (max-width: 768px) {
-      .cardio {
-        width: 100%;
-      }
-    }
-  @media (min-width: 768px) {
-      .cardio {
-        width: 19rem;
-      }
-    }
+.cardio {
+  border: 3px solid rgb(98, 195, 0) !important;
+  border-radius: 5px !important;
+}
 
- .cardio {
-   border: 5px ridge black ;
- }
+.bottom {
+  border-bottom: 8px double rgb(98, 195, 0)!important;
+}
 
- #contact-form{
+#contact-form {
   margin-right: 35%;
- }
+}
 
- body {
-  background: linear-gradient(to bottom left, rgb(2, 2, 2), 60%, rgb(47, 85, 121)) !important;
- }
+body {
+  background: linear-gradient(0deg, rgb(2, 2, 2), 90%, rgb(47, 85, 121)) !important;
+}
+
+.neon {
+  background-color: rgb(109, 218, 0) !important;
+}
+.neon:hover {
+  background-color: rgb(100, 177, 24) !important;
+}
+
+.lazy:hover {
+  border: 3px solid chartreuse !important;
+  border-radius: 5px !important;
+}
+
+.card-body {
+  background: radial-gradient(rgb(42, 75, 105), rgb(2, 2, 2)) !important;
+}
