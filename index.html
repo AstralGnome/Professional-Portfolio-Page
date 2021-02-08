@@ -28,10 +28,11 @@
 
     <!-- NAVBAR2 -->
     <nav id="navbar2" class="navbar mb-5">
-      <a class= "text-white disabled active navbar-brand" href="#">Home</a>
-      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
-          <span class="navbar-toggler-icon my-toggler"></span>
+      <a class="text-white disabled active navbar-brand" href="#">Home</a>
+      <button id="burglars" class="text-center ml-auto" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+          <img id="animationTime" src="/assets/images/Nav_icon-01.png" alt="rotating icon"></img>
       </button>
+
       <div class="navbar-collapse collapse" id="collapsingNavbar2">
           <ul class="navbar-nav mx-auto">
               <li class="nav-item active">
@@ -109,7 +110,7 @@
           </div>
         </div>
         <!-- 4 -->
-        <div class="cardio mt-3 mx-auto mb-4 mb-md-2 card d-flex">
+        <div class="cardio mx-auto mb-4 mb-md-2 card d-flex">
           <img class="bottom card-img-top" src="gifs\QuizZz.gif" alt="Card image cap">
           <div class="card-body text-white">
             <h5 class="text-center card-title">Quiz Game</h5>
@@ -119,7 +120,7 @@
           </div>
         </div>
           <!-- 5 -->
-          <div class="cardio mt-3 mx-auto mb-4 mb-md-2 card d-flex">
+          <div class="cardio mx-auto mb-4 mb-md-2 card d-flex">
             <img class="bottom card-img-top" src="gifs\ReadMeGen.gif" alt="Card image cap">
             <div class="card-body text-white">
               <h5 class="text-center card-title">README Generator</h5>
@@ -128,7 +129,7 @@
             </div>
           </div>
           <!-- 6 -->
-          <div class="cardio mt-3 mx-auto mb-4 mb-md-2 card d-flex">
+          <div class="cardio mx-auto mb-4 mb-md-2 card d-flex">
             <img class="bottom card-img-top" src="gifs\Work-Day-Scheduler.gif" alt="Card image cap">
             <div class="card-body text-white">
               <h5 class="text-center card-title">Work Day Scheduler</h5>
@@ -147,8 +148,23 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
-</html>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+      $("#burglars").on("click", function (event) {
+        // Make sure to preventDefault on a submit event.
+        event.preventDefault();
+        //Resets 1X gif to play again on click
+        var el = $("#animationTime");
+        el.attr("src", "");
+        el.attr("src", "gifs/rotator.gif");
+      });
+    </script>
+    <script>
+    $("#burglars").hover(function() {
+      $("burglars").css("transition", "1s"); // Adding transition
+      $("burglars").css("background", "#fff"); //Background color to fade into 
+    }); 
+   </script>
   </body>
 </html>
+
