@@ -81,17 +81,16 @@ body {
     box-shadow: 0 0 5px transparent;
   }
   50% {
-    background-color: rgb(53, 105, 0);
-    box-shadow: 0 0 20px rgb(47, 93, 0);
+    background-color: rgb(56, 112, 0);
+    box-shadow: 0 0 20px rgb(56, 112, 0);
   }
   100% {
     background-color: transparent;
     box-shadow: 0 0 5px transparent;
   }
 }
-#burglars:hover {
-  animation: glowing 4500ms infinite;
-  transition: 3s;
+#burglars:focus {
+  animation: glowing 2500ms ease-out;
 }
 #burglars {
   border: 2.5px solid chartreuse !important;
@@ -100,4 +99,13 @@ body {
   padding-bottom: 4px;
   outline: none;
   background-color: transparent;
+}
+
+.mobileTextActive {
+  font-size: 20px !important;
+  color: rgb(109, 218, 0) !important;
+}
+
+.mobileText:hover {
+  color: rgb(109, 218, 0) !important;
 }
