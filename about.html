@@ -1,91 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link rel="stylesheet" type="text/css" href="assets\style.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
+  <link rel="stylesheet" type="text/css" href="assets\style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-    <link rel="icon" href="assets\images\crystal1inks.png" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
 
-    <title>Keenan Reed's Portfolio</title>
-  </head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="icon" href="assets\images\crystal1inks.png" />
 
-  <body>
-    <!-- HEADER -->
-    <header class="container-fluid">
-      <div class="row">
-        <img id="top" class="col p-0" src="assets\images\001 r inked.png" alt="" />
-      </div>
-    </header>
+  <title>Keenan Reed's Portfolio</title>
+</head>
 
-    <!-- TITLE -->
-    <div id="title" class="row">
-      <h2 class="text-monospace text-primary text-center mx-auto pb-4 mt-3">Keenan Reed<br>Full Stack Developer</h2>        
+<body>
+
+  <!-- NAVBAR2 -->
+  <nav id="navbar2" class="navbar mb-5">
+
+    <button id="burglars" class="text-center ml-auto" type="button" data-toggle="collapse"
+      data-target="#collapsingNavbar2">
+      <img id="animationTime" src="/assets/images/Nav_icon-01.png" alt="rotating icon"></img>
+    </button>
+
+    <div class="navbar-collapse collapse" id="collapsingNavbar2">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+          <a class="mobileTextActive font-weight-bold nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="mobileText nav-link text-white" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="mobileText nav-link text-white" href="resume.html">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="mobileText nav-link text-white" href="https://github.com/AstralGnome">GitHub</a>
+        </li>
+        <li class="nav-item">
+          <a class="mobileText nav-link text-white" href="contact.html">Contact</a>
+        </li </ul>
     </div>
+  </nav>
 
-    <!-- NAVBAR2 -->
-    <nav id="navbar2" class="navbar navbar-light bg-lignt">
-      <a href="index.html" class="text-primary navbar-brand">Home</a>
-      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
-          <span class="navbar-toggler-icon my-toggler"></span>
-      </button>
-      <div class="navbar-collapse collapse" id="collapsingNavbar2">
-          <ul class="navbar-nav mx-auto">
-              <li class="nav-item active">
-                  <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Resume</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">GitHub</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-              </li
-          </ul>
-      </div>
-   </nav>
-   
-   <!-- CONTAINER -->
-   <div id="primary" class="mt-2 row">  
-      
-      <!-- NAVBAR -->
-      <nav id="navbar" class="ml-5 flex-column nav-pills mt-5 text-md-center">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link disabled active" href="about.html">About</a>
-        <a class="nav-link" href="resume.html">Resume</a>
-        <a class="nav-link" href="https://github.com/AstralGnome">Github</a>
-        <a class="nav-link " href="contact.html">Contact</a>
-      </nav>
-    <!-- FOOTER -->
-    <div class="container-fluid">
-        <div class="row">
-          <img id="bottom" class="fixed-bottom col p-0"
-            src="assets\images\noCubesOrClouds.png" alt=""
-          />
-        </div>
+  <!-- INTRO GIF -->
+  <div id="title" class="mt-5 row">
+    <div id="profile" class="img-fluid mx-auto">
+      <img class="img-fluid" src="gifs/IntroGifMD.mp4" alt="Intro gif" />
     </div>
+  </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
-  </html>
-    </body>
-  </html>
-  
+  <!-- CONTAINER -->
+  <div id="primary" class="mt-2 row">
+
+    <!-- NAVBAR -->
+    <nav id="navbar" class="navvie1 flex-column nav-pills text-md-center">
+      <a class="neon mb-2 mt-4 nav-link active font-weight-bold text-dark" href="#">Home</a>
+      <a class="lazy mb-2 nav-link text-white" href="about.html">About</a>
+      <a class="lazy mb-2 nav-link text-white" href="resume.html">Resume</a>
+      <a class="lazy mb-2 nav-link text-white" href="https://github.com/AstralGnome">Github</a>
+      <a class="lazy nav-link text-white" href="contact.html">Contact</a>
+    </nav>
+
+    <div class="aboutText col-5 flex-box text-white">
+      <h3>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium ea dolorem, quam molestiae eos provident
+        fugit illum dolores molestias itaque error natus laborum amet officiis sed quae a, quibusdam placeat!
+      </h3>
+    </div>
+    <!-- PICTURE -->
+    <div class="order-2 col-4 mt-md-5 row">
+      <div id="profile" class=" mb-5">
+        <img id="profileImg" class="img-fluid ml-lg-5 ml-md-2" src="assets/images/blankBackColorBlur.png"
+          alt="profile picture" />
+      </div>
+    </div>
+  </div>
+
+
+  <!-- FOOTER -->
+  <div id="bottom-cont" class="container-fluid footer">
+    <div class="row mb-5">
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script>
+    $("#burglars").on("click", function (event) {
+      // Make sure to preventDefault on a submit event.
+      event.preventDefault();
+      //Resets 1X gif to play again on click
+      var el = $("#animationTime");
+      el.attr("src", "");
+      el.attr("src", "gifs/rotator.mp4");
+    });
+  </script>
+</body>
+
+</html>

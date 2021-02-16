@@ -102,10 +102,23 @@ body {
 }
 
 .mobileTextActive {
-  font-size: 20px !important;
+  font-size: 30px !important;
   color: rgb(109, 218, 0) !important;
+}
+
+.mobileText {
+  font-size: 20px !important
 }
 
 .mobileText:hover {
   color: rgb(109, 218, 0) !important;
+}
+.navvie1 {
+  margin-top: 3em;
+  margin-right: 0;
+  
+}
+
+.aboutText {
+  margin-top: 3em;
 }
