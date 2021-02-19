@@ -67,8 +67,10 @@ body {
 }
 
 .lazy:hover {
-  border: 3px solid chartreuse !important;
-  border-radius: 5px !important;
+
+  box-shadow: inset 0 -3em 3em rgb(73, 91, 114),
+                    0 0  0 2px chartreuse,
+                    0.3em 0.3em 1em rgb(73, 91, 114);
 }
 
 .card-body {
