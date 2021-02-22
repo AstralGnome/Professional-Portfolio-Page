@@ -57,6 +57,10 @@
 
 body {
   background: linear-gradient(0deg, rgb(2, 2, 2), 90%, rgb(47, 85, 121)) !important;
+  height: 100% !important;
+  margin: 0 !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
 }
 
 .neon {

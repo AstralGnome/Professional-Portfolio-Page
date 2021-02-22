@@ -30,64 +30,50 @@
 
     <div class="navbar-collapse collapse" id="collapsingNavbar2">
       <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="mobileText nav-link text-white" href="index.html">Home</a>
+        </li>
         <li class="nav-item active">
-          <a class="mobileTextActive font-weight-bold nav-link" href="#">Home</a>
+          <a class="mobileTextActive font-weight-bold nav-link " href="about.html">About</a>
         </li>
         <li class="nav-item">
-          <a class="mobileText nav-link text-white" href="about.html">About</a>
+          <a class="mobileText nav-link text-white" href="./assets/images/BootcampResume.pdf" target="_blank">Resume</a>
         </li>
         <li class="nav-item">
-          <a class="mobileText nav-link text-white" href="resume.html">Resume</a>
+          <a class="mobileText nav-link text-white" href="https://github.com/AstralGnome" target="_blank">GitHub</a>
         </li>
-        <li class="nav-item">
-          <a class="mobileText nav-link text-white" href="https://github.com/AstralGnome">GitHub</a>
-        </li>
-        <li class="nav-item">
-          <a class="mobileText nav-link text-white" href="contact.html">Contact</a>
-        </li </ul>
     </div>
   </nav>
 
-  <!-- INTRO MP4 -->
-  <div id="title" class="mt-5 row">
-    <div id="profile" class="img-fluid mx-auto">
-      <img class="img-fluid" src="assets/mp4s/IntroMD.mp4" alt="Intro gif" />
-    </div>
+<!-- INTRO GIF -->
+<div id="title" class="row">
+  <div style="width: 380px; height: 298px;" class="mx-auto">
+      <img class="img-fluid" id="profile" src="./gifs/IntroGifMD.gif" alt="Introductory statement">        
   </div>
 
   <!-- CONTAINER -->
-  <div id="primary" class="mt-2 row">
+  <div id="primary" class="mt-4 row">
 
     <!-- NAVBAR -->
-    <nav id="navbar" class="navvie1 flex-column nav-pills text-md-center">
-      <a class="neon mb-2 mt-4 nav-link active font-weight-bold text-dark" href="#">Home</a>
-      <a class="lazy mb-2 nav-link text-white" href="about.html">About</a>
-      <a class="lazy mb-2 nav-link text-white" href="resume.html">Resume</a>
-      <a class="lazy mb-2 nav-link text-white" href="https://github.com/AstralGnome">Github</a>
-      <a class="lazy nav-link text-white" href="contact.html">Contact</a>
+    <nav style="height: 100%;" id="navbar" class="ml-4 navvie1 flex-column nav-pills text-md-center">
+      <a class="lazy mb-2 mt-4 nav-link text-white" href="index.html">Home</a>
+      <a class="neon mb-2 nav-link active font-weight-bold text-dark" href="about.html">About</a>
+      <a class="lazy mb-2 nav-link text-white" href="./assets/images/BootcampResume.pdf" target="_blank">Resume</a>
+      <a class="lazy mb-2 nav-link text-white" href="https://github.com/AstralGnome" target="_blank">Github</a>
     </nav>
 
-    <div class="aboutText col-5 flex-box text-white">
+    <div class="col-lg-10 ml-lg-0 col-md-8 aboutText mx-5 pt-2 text-white">
       <h3>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium ea dolorem, quam molestiae eos provident
-        fugit illum dolores molestias itaque error natus laborum amet officiis sed quae a, quibusdam placeat!
+        I am a full stack web developer with a background in editing, writing, and graphic-novel production. You will find that I am a detail oriented team player with a passion for problem solving and creating buttery smooth, user-friendly applications.
       </h3>
     </div>
     <!-- PICTURE -->
-    <div class="order-2 col-4 mt-md-5 row">
-      <div id="profile" class=" mb-5">
-        <img id="profileImg" class="img-fluid ml-lg-5 ml-md-2" src="assets/images/blankBackColorBlur.png"
-          alt="profile picture" />
-      </div>
-    </div>
   </div>
 
-
-  <!-- FOOTER -->
   <div id="bottom-cont" class="container-fluid footer">
-    <div class="row mb-5">
-    </div>
   </div>
+</div>
+  
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -97,16 +83,16 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script>
-    $("#burglars").on("click", function (event) {
-      // Make sure to preventDefault on a submit event.
-      event.preventDefault();
-      //Resets 1X gif to play again on click
-      var el = $("#animationTime");
-      el.attr("src", "");
-      el.attr("src", "gifs/rotator.mp4");
-    });
-  </script>
+    <script>
+      $("#burglars").on("click", function (event) {
+        // Make sure to preventDefault on a submit event.
+        event.preventDefault();
+        //Resets 1X gif to play again on click
+        var el = $("#animationTime");
+        el.attr("src", "");
+        el.attr("src", "gifs/rotator.gif");
+      });
+    </script>
 </body>
 
 </html>
